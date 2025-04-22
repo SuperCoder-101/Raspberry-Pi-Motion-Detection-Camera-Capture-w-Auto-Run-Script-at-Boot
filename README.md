@@ -272,7 +272,7 @@ Add at the bottom:
 
 Paste this into the file:
 
-[Unit]
+`[Unit]
 Description=Motion Detection
 After=multi-user.target
 Wants=motion.service
@@ -286,7 +286,7 @@ Restart=always
 RestartSec=3
 
 [Install]
-WantedBy=multi-user.target
+WantedBy=multi-user.target`
 
 Then run these commands:
 
