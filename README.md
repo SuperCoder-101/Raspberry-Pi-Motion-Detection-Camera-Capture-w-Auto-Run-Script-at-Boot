@@ -194,18 +194,27 @@ Then save and exit using **CTRL + X**, then press **Y**, then **Enter**
 Paste this into the **.service** file:
 
 [Unit]
+
 Description=Video Service
+
 After=network.target
 
 [Service]
+
 ExecStart=/home/your-user/Video.sh
+
 WorkingDirectory=/home/your-user
+
 User=your-user
+
 KillMode=mixed
+
 Restart=always
+
 RestartSec=3
 
 [Install]
+
 WantedBy=multi-user.target
 
 Enable the service:
@@ -272,21 +281,31 @@ Add at the bottom:
 
 Paste this into the file:
 
-`[Unit]
+[Unit]
+
 Description=Motion Detection
+
 After=multi-user.target
+
 Wants=motion.service
 
 [Service]
+
 Type=simple
+
 ExecStart=/usr/bin/python3 /home/your-user/python_scripts/motion.py
+
 User=your-user
+
 KillMode=mixed
+
 Restart=always
+
 RestartSec=3
 
 [Install]
-WantedBy=multi-user.target`
+
+WantedBy=multi-user.target
 
 Then run these commands:
 
