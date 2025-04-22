@@ -192,8 +192,7 @@ Then save and exit using **CTRL + X**, then press **Y**, then **Enter**
  `sudo nano /etc/systemd/system/video.service`
 
 Paste this into the **.service** file:
-
-
+----------------------------------------------------------------------------------------
 [Unit]
 
 Description=Video Service
@@ -217,8 +216,7 @@ RestartSec=3
 [Install]
 
 WantedBy=multi-user.target
-
-
+----------------------------------------------------------------------------------------
 Enable the service:
 
  `sudo chmod 644 /etc/systemd/system/video.service`
@@ -282,8 +280,7 @@ Add at the bottom:
  `sudo nano /etc/systemd/system/motion.service`
 
 Paste this into the file:
-
-
+------------------------------------------------------------------------
 [Unit]
 
 Description=Motion Detection
@@ -309,8 +306,7 @@ RestartSec=3
 [Install]
 
 WantedBy=multi-user.target
-
-
+-----------------------------------------------------------------------
 Then run these commands:
 
  `sudo chmod 644 /etc/systemd/system/motion.service`
