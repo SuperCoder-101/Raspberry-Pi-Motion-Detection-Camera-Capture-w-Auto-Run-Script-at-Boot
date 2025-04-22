@@ -130,16 +130,22 @@ That breaks down to:
 **Common _chmod_ Values**
 
 Value -------- Meaning
+
 ----------------------------------------------------------------------------------------------
 777 ---------- Read, write, and execute for everyone (owner, group, others)
+
 ----------------------------------------------------------------------------------------------
 755 ---------- Owner can write; others can read and execute (common for scripts)
+
 ----------------------------------------------------------------------------------------------
 666 ---------- Read and write for everyone (no execute) -- often used for device files
+
 ----------------------------------------------------------------------------------------------
 644 ---------- Owner can read/write; others can only read (common for config files)
+
 ----------------------------------------------------------------------------------------------
 660 ---------- Read/write for owner and group, no access for others (used for controlled access to hardware, like /dev/gpiomem)
+
 ----------------------------------------------------------------------------------------------
 
 --------------------------------------------------------------------------------------------------
@@ -192,6 +198,7 @@ Then save and exit using **CTRL + X**, then press **Y**, then **Enter**
  `sudo nano /etc/systemd/system/video.service`
 
 Paste this into the **.service** file:
+
 ----------------------------------------------------------------------------------------
 [Unit]
 
@@ -216,6 +223,7 @@ RestartSec=3
 [Install]
 
 WantedBy=multi-user.target
+
 ----------------------------------------------------------------------------------------
 Enable the service:
 
@@ -280,6 +288,7 @@ Add at the bottom:
  `sudo nano /etc/systemd/system/motion.service`
 
 Paste this into the file:
+
 ------------------------------------------------------------------------
 [Unit]
 
@@ -306,6 +315,7 @@ RestartSec=3
 [Install]
 
 WantedBy=multi-user.target
+
 -----------------------------------------------------------------------
 Then run these commands:
 
