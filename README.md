@@ -193,6 +193,7 @@ Then save and exit using **CTRL + X**, then press **Y**, then **Enter**
 
 Paste this into the **.service** file:
 
+
 [Unit]
 
 Description=Video Service
@@ -216,6 +217,7 @@ RestartSec=3
 [Install]
 
 WantedBy=multi-user.target
+
 
 Enable the service:
 
@@ -281,6 +283,7 @@ Add at the bottom:
 
 Paste this into the file:
 
+
 [Unit]
 
 Description=Motion Detection
@@ -306,6 +309,7 @@ RestartSec=3
 [Install]
 
 WantedBy=multi-user.target
+
 
 Then run these commands:
 
