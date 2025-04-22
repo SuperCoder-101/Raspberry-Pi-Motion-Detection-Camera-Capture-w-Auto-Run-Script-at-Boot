@@ -264,6 +264,8 @@ Add at the bottom:
 
  `dtoverlay=imx219`
 
+ Now this is dependent on which camera you are using and if they need to have **dtoverlay=something** enabled. Some cameras do not require this, so please make sure to look up your camera type and ensure if it requires dtoverlay. Typically, cameras for **IMX** will need it. However, if you have an **ov5647**, these usually do not need it.
+
 **Create systemd Service**
 
  `sudo nano /etc/systemd/system/motion.service`
